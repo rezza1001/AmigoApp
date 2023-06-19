@@ -1,15 +1,23 @@
 package com.amigo.app.ui;
 
-import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
-
 import com.amigo.app.R;
+import com.amigo.app.ui.master.MyActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends MyActivity {
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected int setLayout() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    protected void initLayout() {
+
+    }
+
+    @Override
+    protected void initListener() {
+
     }
 }
